@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/x-icon" href="bodhilogo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bodhi duh Basset</title>
+  <style>
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 1.2rem;
+    }
+
+    body {
+      background-color: #e6fcf3;
+      color: black;
+      line-height: 1.6;
+    }
+
+    .header {
+      background-color: #c8e5fc;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .Bodhi-header {
+      max-width: 600px;
+      width: 400px;
+      height: auto;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+      font-size: 1.3rem;
+    }
+
+    .navbar a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+      display: inline-block;
+    }
+
+    .navbar a:hover {
+      color: #97b5cb;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: white;
+      padding: 0.8rem 2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+      transition: background-color 0.3s;
+      font-size: 1.2rem;
+    }
+
+    .cta-button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+      font-size: 1.1rem;
+    }
+
+    .section {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+      min-height: 80vh;
+    }
+    #chat-box {
+      width: 100%;
+      height: 400px;
+      border: 2px, solid, grey;
+      border-radius: 10px;
+      padding: 10px;
+      overflow-y: auto;
+      background-color: white;
+    }
+
+    .message {
+      margin: 10px 0;
+    }
+
+    .user {
+      text-align: right;
+      color: blue;
+    }
+
+    .Bodhi {
+      text-align: left;
+      color: green;
+    }
+
+    #input-area {
+      margin-top: 10px;
+      display: flex;
+      gap: 5px;
+    }
+
+    input {
+      flex: 1;
+      padding: 5px;
+    }
+
+    button {
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header" id="top">
+    <img src="bodhi.png" alt="Bodhi could not load :(" class="Bodhi-header">
+    <br>
+  </header>
+
+  <nav class="navbar">
+    <a href="#top">Top</a>
+    <a href="#description">Who is Bodhi?</a>
+    <a href="#Basset_def">What is a basset?</a>
+    <a href="#gallery">Bodhi photo gallery.</a>
+    <a href="#Chat">Chat with Bodhi!</a>
+      <a href="#Daily-Photo">Dailiy Photo:</a>
+    <a href="#bottom">Bottom</a>
+  </nav>
+
+  <div class="container">
+
+    <section id="description" class="section">
+      <h1>Who is Bodhi?</h1>
+      <br>
+      <p>
+        Bodhi is a 2 year old pure bred european basset hound. He is about 10 inches off the ground. Bodhis ears are 12 inches each (30 cm). Bodhi is black and white in color with a little bit of brown. Bodhi was born at 
+        <a href="https://stonewallfarm.net/" target="_blank">Stonewall Farm.</a>
+      </p>
+      <center>
+        <figure>
+          <img src="desc_photo.jpg" width="50%" alt="Bodhi could not load :(">
+          <figcaption>Bodhi</figcaption>
+        </figure>
+      </center>
+    </section>
+
+    <section id="Basset_def" class="section">
+      <h1>What is a Basset?</h1>
+      <p>
+        "Bassets are large, short, solid and long, with curved sabre tails held high over their long backs..." - 
+        <a href="https://en.wikipedia.org/wiki/Basset_Hound" target="_blank">Wikipedia</a>. 
+        Bassets have heavy bones, which make them heavier in proportion to their height than any other breed. 
+        Their short legs are due to a form of dwarfism (osteochondrodysplasia). 
+        The Basset Hound’s skull is characterized by its pronounced occipital bone, a deep muzzle with hanging skin over the lips, and very long ears. 
+        Their neck is muscular and well-arched, with dewlap. 
+        Their body is long, with a pronounced chest and prominent rib cage. 
+        The skin is loose and elastic. Their hindquarters are muscular and the tail is curved and carried high.
+      </p>
+
+      <div class="row">
+        <div class="column">
+          <figure>
+            <img src="paws.jpg" width="100%" alt="Bodhi could not load :(">
+            <figcaption>Bodhis Paws</figcaption>
+          </figure>
+        </div>
+
+        <div class="column">
+          <figure>
+            <img src="bodhi2.jpg" width="100%" alt="Bodhi could not load :(">
+            <figcaption>Bodhi with tail sticking up</figcaption>
+          </figure>
+        </div>
+
+        <div class="column">
+          <figure>
+            <img src="bigearboi.jpg" width="100%" alt="Bodhi could not load :(">
+            <figcaption>Basset Ear Demonstration</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <h1>Bodhi Photo Gallery:</h1>
+      <br>
+      <div class="row">
+ 
+        <div class="column"><figure><img src="Fatie.jpg" width="100%"><figcaption>Bodhi the fatie</figcaption></figure></div>
+        <div class="column"><figure><img src="Ear XD.jpg" width="100%"><figcaption>Ear XD</figcaption></figure></div>
+        <div class="column"><figure><img src="CutiePatootie.jpg" width="100%"><figcaption>Cutie Patootie</figcaption></figure></div>
+        <div class="column"><figure><img src="Bubble Bodhi.jpg" width="100%"><figcaption>Bubble Bath :D</figcaption></figure></div>
+        <div class="column"><figure><img src="Big Feet ;D.jpg" width="100%"><figcaption>Big Feet :D</figcaption></figure></div>
+        <div class="column"><figure><img src="Big Feet ;).jpg" width="100%"><figcaption>Big Feet :)</figcaption></figure></div>
+        <div class="column"><figure><img src="Bendy spinidueos.jpg" width="100%"><figcaption>Bendy spinidueos (Made up)</figcaption></figure></div>
+        <div class="column"><figure><img src="Bath(Instert frown face here).jpg" width="100%"><figcaption>Bath :(</figcaption></figure></div>
+        <div class="column"><figure><img src="BackWall.jpg" width="100%"><figcaption>Very Majestic</figcaption></figure></div>
+        <div class="column"><figure><img src="Baby bodhi.jpg" width="100%"><figcaption>Baby bodhi :)</figcaption></figure></div>
+        <div class="column"><figure><img src="AtTheVet.jpg" width="100%"><figcaption>Bodhi loves the vet 100%</figcaption></figure></div>
+        <div class="column"><figure><img src="1MileWalk      ZZZZZZZzzzzzzzzzzz....jpg" width="100%"><figcaption>One mile walk? too far :(</figcaption></figure></div>
+        <div class="column"><figure><img src="1 Mile too far!!!.jpg" width="100%"><figcaption>1 Mile too far!!!</figcaption></figure></div>
+        <div class="column"><figure><img src="OnZeCouch.jpg" width="100%"><figcaption>On Ze Couch!</figcaption></figure></div>
+        <div class="column"><figure><img src="No -Talking Ben.jpg" width="100%"><figcaption>"No" -Talking Ben</figcaption></figure></div>
+        <div class="column"><figure><img src="MMMMMMTounge.jpg" width="100%"><figcaption>Sticking tounge out.</figcaption></figure></div>
+        <div class="column"><figure><img src="Middle aged man.jpg" width="100%"><figcaption>Middle aged man Bodhi.</figcaption></figure></div>
+        <div class="column"><figure><img src="lilBabyBodhi.jpg" width="100%"><figcaption>Wittle Baby Bodhi.</figcaption></figure></div>
+        <div class="column"><figure><img src="ISMELLCOLDNESSHELPMEPLEASE.jpg" width="100%"><figcaption>Smells... Cold...</figcaption></figure></div>
+        <div class="column"><figure><img src="Innocent your honor.jpg" width="100%"><figcaption>I plead innocent your honor.</figcaption></figure></div>
+        <div class="column"><figure><img src="Im the cutest basset right.jpg" width="100%"><figcaption>Im the cutest basset right?</figcaption></figure></div>
+        <div class="column"><figure><img src="IDK;-;.jpg" width="100%"><figcaption>Hey there.</figcaption></figure></div>
+        <div class="column"><figure><img src="I need coffee.jpg" width="100%"><figcaption>I need coffee...</figcaption></figure></div>
+        <div class="column"><figure><img src="I can still c u.jpg" width="100%"><figcaption>This can't be comfortable.</figcaption></figure></div>
+        <div class="column"><figure><img src="Hmmm nothing wrong here.jpg" width="100%"><figcaption>Bodhi is ACTUALLY a human.</figcaption></figure></div>
+        <div class="column"><figure><img src="HeLOOOVESSSCrushinALoaf.jpg" width="100%"><figcaption>Bodhi am is a loaf.</figcaption></figure></div>
+        <div class="column"><figure><img src="Hat.jpg" width="100%"><figcaption>Bodhi has a hat on.</figcaption></figure></div>
+        <div class="column"><figure><img src="Food please.jpg" width="100%"><figcaption>This is a tactic for getting food.</figcaption></figure></div>
+        <div class="column"><figure><img src="wittle wed bawl.jpg" width="100%"><figcaption> Bodhi and his wittle wed bawl.</figcaption></figure></div>
+        <div class="column"><figure><img src="wingspan.jpg" width="100%"><figcaption>Great wingspan.</figcaption></figure></div>
+        <div class="column"><figure><img src="Why is he so majestic...jpg" width="100%"><figcaption>Why is he so majestic...?</figcaption></figure></div>
+        <div class="column"><figure><img src="What's that guy in star wars. The green fat one.jpg" width="100%"><figcaption><a href="https://www.google.com/search?gs_ssp=eJzj4tDP1TdIy8otNmD04stKTEpKVCjJSFXIKC0pAQBr1wh9&q=jabba+the+hutt&rlz=1CAVMHK_enUS1127&oq=jabba&gs_lcrp=EgZjaHJvbWUqCggBEC4YsQMYgAQyBggAEEUYOTIKCAEQLhixAxiABDIHCAIQLhiABDIKCAMQLhixAxiABDIKCAQQABixAxiABDIKCAUQLhixAxiABDIQCAYQLhivARjHARixAxiABDIHCAcQABiPAjIHCAgQABiPAtIBCDIyMjRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8&safe=active&ssui=on" target="0">Bodhi the hutt</a></figcaption></figure></div>
+        <div class="column"><figure><img src="VeryDemure.jpg" width="100%"><figcaption>Very Demure. (is that the right word?)</figcaption></figure></div>
+        <div class="column"><figure><img src="U finuhly up (question mark).jpg" width="100%"><figcaption>"U finuhly up?"</figcaption></figure></div>
+        <div class="column"><figure><img src="Tounge.jpg" width="100%"><figcaption>Tounge(Shrug emoji)</figcaption></figure></div>
+        <div class="column"><figure><img src="SUPERMANNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN.jpg" width="100%"><figcaption>Supuhman</figcaption></figure></div>
+        <div class="column"><figure><img src="StuckUnderTable.jpg" width="100%"><figcaption>Bodhi is stuck under a table...</figcaption></figure></div>
+        <div class="column"><figure><img src="StinkEye.jpg" width="100%"><figcaption>Stink eye</figcaption></figure></div>
+        <div class="column"><figure><img src="SillyGoofyBoi.jpg" width="100%"><figcaption>Silly goofy boi</figcaption></figure></div>
+        <div class="column"><figure><img src="SantaSnood.jpg" width="100%"><figcaption>Santa snood Bodhi</figcaption></figure></div>
+        <div class="column"><figure><img src="RawHide(Instert smile here).jpg" width="100%"><figcaption>Raw hide :)</figcaption></figure></div>
+        <div class="column"><figure><img src="Pooing ice.jpg" width="100%"><figcaption>Pooing ice</figcaption></figure></div>
+      </div>
+    </section>
+    <section class="section" id="Chat">
+        <h1>Chat with Bodhi!</h1>
+        <div id="chat-box"></div>
+
+  <div id="input-area">
+    <input type="text" id="user-input" placeholder="Say something to Bodhi..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script>
+    const chatBox = document.getElementById("chat-box");
+    const userInput = document.getElementById("user-input");
+
+    function sendMessage() {
+      const userText = userInput.value.trim();
+      if (!userText) return;
+
+      const userMessage = document.createElement("div");
+      userMessage.className = "message user";
+      userMessage.textContent = userText;
+      chatBox.appendChild(userMessage);
+
+      const BodhiMessage = document.createElement("div");
+      BodhiMessage.className = "message Bodhi";
+      BodhiMessage.textContent = "Woof!";
+      chatBox.appendChild(BodhiMessage);
+
+      chatBox.scrollTop = chatBox.scrollHeight;
+      userInput.value = "";
+    }
+
+    userInput.addEventListener("keydown", function(event) {
+      if (event.key === "Enter") {
+        sendMessage();
+      }
+    });
+  </script>
+    </section>
+    <section class="section" id="Daily-Photo">
+        <h1>Daily photo:</h1>
+        <p1>This is a photo that will be updated daily. The photo is taken the day before.</p1>
+        <br><br>
+        <center>
+            <img src="Daily_Photo.jpg" width="80%" alt="Bodhi could not load. :(">
+        </center>
+    </section>
+  </div>
+    
+  <footer id="bottom">
+    <p>Last updated: 4/21/25 09:58 EST US&CAN</p>
+    <p>V.1.0.0</p>
+  </footer>
+
+</body>
+
+</html>
